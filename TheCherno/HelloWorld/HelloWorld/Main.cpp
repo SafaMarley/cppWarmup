@@ -1,8 +1,9 @@
 #include <iostream>
-#include "Log.h"
+//#include "Log.h"
 
 #define LOG(x) std::cout << x << std::endl
 
+/*
 void incrementPtr(int* a)
 {
 	(*a)++;
@@ -25,9 +26,69 @@ public:
 		locationY += y * speed;
 	}
 };
+*/
 
-int main()
+/*
+class Log
 {
+private:
+	int level; // 0: info 1: warning 2: error
+public:
+	void SetLevel(int level)
+	{
+		this->level = level;
+	}
+
+	void Info(const char* message)
+	{
+		if (level > 0)
+		{
+			std::cout << "[Error] " << message << std::endl;
+		}
+	}
+
+	void Warn(const char* message)
+	{
+		if (level > 1)
+		{
+			std::cout << "[Error] " << message << std::endl;
+		}
+	}
+
+	void Error(const char* message)
+	{
+		if (level > 2)
+		{
+			std::cout << "[Error] " << message << std::endl;
+		}
+	}
+};
+*/
+
+/*
+struct Entity
+{
+	static int x, y;
+
+	void PrintLog()
+	{
+		std::cout << x << ", " << y << std::endl;
+	}
+};
+
+int Entity::x;
+int Entity::y;
+*/
+
+/*
+enum Example
+{
+	A = 0, B = 2, C = 4
+};
+*/
+
+//int main()
+//{
 	/*
 	char a = 65;
 	int x = 5;
@@ -82,6 +143,7 @@ int main()
 	LOG(b);
 	*/
 
+	/*
 	Player player;
 	player.locationX = 3;
 	player.locationY = 4;
@@ -91,8 +153,33 @@ int main()
 
 	LOG(player.locationX);
 	LOG(player.locationY);
+	*/
 
-	std::cin.get();
+	/*
+	Log log;
+	log.SetLevel(4);
+	log.Error("Hi");
+	*/
 
-	return 0;
-}
+	/*
+	Entity e1;
+	e1.x = 5;
+	e1.y = 4;
+
+	Entity e2;
+	e2.x = 15;
+	e2.y = 14;
+
+	Entity::x = 1;
+	Entity::y = 2;
+
+	e1.PrintLog();
+	e2.PrintLog();
+	*/
+
+//	Example value = A;
+//
+//	std::cin.get();
+//
+//	return 0;
+//}
