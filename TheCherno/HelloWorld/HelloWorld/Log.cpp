@@ -6,6 +6,7 @@ void Log(const char* message)
 }
 */
 
+/*
 class Log
 {
 public:
@@ -54,3 +55,4 @@ int main()
 	log.PrintWarn("Hey");
 	log.PrintError("Hello");
 }
+*/

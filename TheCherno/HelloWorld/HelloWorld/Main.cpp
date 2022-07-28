@@ -183,3 +183,73 @@ enum Example
 //
 //	return 0;
 //}
+
+/*
+class Entity
+{
+	float x, y;
+public:
+	Entity()
+	{
+		this->x = 0.0f;
+		this->y = 0.0f;
+	}
+	Entity(float x, float y)
+	{
+		this->x = x;
+		this->y = y;
+	}
+
+	~Entity()	//Destructor being called after the object being destroyed
+	{
+
+	}
+
+	//virtual void Print()
+	//{
+	//	std::cout << x << ", " << y << std::endl;
+	//}
+	
+	virtual void Print() = 0;	//Pure virtual function
+};
+
+class Player:public Entity
+{
+	std::string name;
+public:
+	Player(const std::string name)
+	{
+		this->name = name;
+	}
+	
+	void Print() override
+	{
+		std::cout << name << std::endl;
+	}
+};
+
+
+int main()
+{
+	//Entity e(10.0f, 20.5f);
+	//e.Print();
+
+	Player p("safa");
+	p.Print();
+
+	std::cin.get();
+	return 0;
+}
+*/
+
+int main()
+{
+	int example[5];					//created in stack
+	example[0] = 1;
+	example[4] = 10;
+	int* ptrArray = new int[5];		//created in heap
+
+	int count = sizeof(example) / sizeof(int);
+
+	std::cin.get();
+}

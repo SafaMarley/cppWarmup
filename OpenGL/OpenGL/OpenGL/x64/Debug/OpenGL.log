@@ -1,0 +1,11 @@
+﻿  Application.cpp
+Application.obj : error LNK2019: çözümlenmemiş dış sembol __imp_glClear için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwInit için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwTerminate için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwCreateWindow için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwWindowShouldClose için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwPollEvents için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwMakeContextCurrent için main işlevinde başvuruldu
+Application.obj : error LNK2019: çözümlenmemiş dış sembol glfwSwapBuffers için main işlevinde başvuruldu
+D:\cppWarmup\cppWarmup\OpenGL\OpenGL\Dependencies\GLFW\lib-vc2022\glfw3.lib : warning LNK4272: 'x86' kitaplık makine türü, 'x64' hedef makine türüyle çakışıyor
+D:\cppWarmup\cppWarmup\OpenGL\OpenGL\x64\Debug\OpenGL.exe : fatal error LNK1120: 8 çözümlenmemiş dışlar
