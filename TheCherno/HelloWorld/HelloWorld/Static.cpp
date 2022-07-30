@@ -1,1 +1,0 @@
-static int s_Var = 5;
